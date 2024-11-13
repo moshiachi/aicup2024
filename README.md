@@ -32,9 +32,8 @@ Run the retrieval process by specifying paths to the questions, source documents
 ```bash
 python3 main.py --question_path path/to/questions.json --source_path path/to/source_documents --output_path path/to/output.
 ```
----
 
-#### Model and API Setup
+## Model and API Setup
 
 - **API Provider**: Voyage AI
 - **Embedding Model**: `voyage-3` – Used to embed document texts for semantic matching.
@@ -64,4 +63,13 @@ https://docs.voyageai.com/docs/embeddings
 - **Rerankers**: 
 https://docs.voyageai.com/docs/reranker
 
----
+
+## Important Note:
+For ```pdf2image```, you still need to do the following things:
+```bash
+sudo apt update
+sudo apt install poppler-utils
+```
+And for pytesseract, You’ll also need Tesseract OCR installed on your system. Follow the Tesseract installation guide (https://github.com/tesseract-ocr/tesseract) if you haven’t installed it yet.
+
+
