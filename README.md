@@ -26,6 +26,13 @@ Python version: 3.10.12
     export VOYAGE_API_KEY="<your secret key>"
     ```
 
+Besides, for ```pdf2image```, you still need to do the following things:
+```bash
+sudo apt update
+sudo apt install poppler-utils
+```
+And for pytesseract, You’ll also need Tesseract OCR installed on your system. Follow the Tesseract installation guide (https://github.com/tesseract-ocr/tesseract) if you haven’t installed it yet.
+
 ## Usage
 Run the retrieval process by specifying paths to the questions, source documents, and output file:
 
@@ -64,12 +71,5 @@ https://docs.voyageai.com/docs/embeddings
 https://docs.voyageai.com/docs/reranker
 
 
-## Important Note:
-For ```pdf2image```, you still need to do the following things:
-```bash
-sudo apt update
-sudo apt install poppler-utils
-```
-And for pytesseract, You’ll also need Tesseract OCR installed on your system. Follow the Tesseract installation guide (https://github.com/tesseract-ocr/tesseract) if you haven’t installed it yet.
 
 
