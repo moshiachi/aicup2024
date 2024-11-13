@@ -31,7 +31,7 @@ Besides, for ```pdf2image```, you still need to do the following things:
 sudo apt update
 sudo apt install poppler-utils
 ```
-And for pytesseract, You’ll also need Tesseract OCR installed on your system. Follow the Tesseract installation guide (https://github.com/tesseract-ocr/tesseract) if you haven’t installed it yet.
+And for ```pytesseract```, You’ll also need Tesseract OCR installed on your system. Follow the Tesseract installation guide (https://github.com/tesseract-ocr/tesseract) if you haven’t installed it yet.
 
 ## Usage
 Run the retrieval process by specifying paths to the questions, source documents, and output file:
